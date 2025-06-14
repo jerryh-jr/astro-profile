@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Cuttle.Cards",
+    "slug": "project-1",
+    "description": "Active contributor since November 2022 with 13 merged pull requests to open-source project. Collaborated\nwith distributed development team to implement new features and resolve issues.",
+    "image": "/images/projects/project-1.svg",
+    "githubURL": "https://github.com/cuttle-cards/cuttle/commits?author=jerryh-jr",
+    "liveSiteURL": "https://www.cuttle.cards/signup"
+  },
+  {
+    "title": "Champions",
+    "slug": "project-2",
+    "description": "Full-stack web application utilizing React frontend with Firebase backend for real-time data management.",
+    "image": "/images/projects/project-2.png",
+    "githubURL": "https://github.com/jerryh-jr/champions-firebase--app",
+    "liveSiteURL": "https://jerry-champion.netlify.app"
+  },
+  {
+    "title": "Add To Cart",
+    "slug": "project-3",
+    "description": "Interactive web application featuring CRUD operations with Firebase database integration. Built responsive UI\nfor seamless item management and real-time updates.",
+    "image": "/images/projects/project-3.png",
+    "githubURL": "#",
+    "liveSiteURL": "https://add-to-cart-jerry.netlify.app/"
+  },
+  {
+    "title": "Digital Business Card",
+    "slug": "project-4",
+    "description": "Digital Business card with a focus on mobile UI.",
+    "image": "/images/projects/project-4.PNG",
+    "githubURL": "#",
+    "liveSiteURL": "https://jerry-business-card.netlify.app"
+  }
+]

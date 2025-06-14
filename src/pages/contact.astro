@@ -1,0 +1,63 @@
+---
+import Section from "../components/Section.astro";
+import Layout from "../layouts/Layout.astro";
+import ButtonLink from "../components/ButtonLink.astro";
+
+const email = "jerry@jerry-codes.com";
+
+const heading = "Contact";
+---
+
+<Layout title="Contact">
+  <Section>
+      <div class="container">
+          <h1>Questions? Please reach out to me!</h1>
+          <img src="/images/me.png" alt="avatar photo" class="avatar" />
+          <p>You can contact me at any of the following</p>
+          <div class="link_container">
+              <ButtonLink href={`mailto:${email}`} text="By Email" variant='secondary' />
+              <ButtonLink href="https://www.linkedin.com/in/jerry-hudgins-jr/" text="On LinkedIn" variant='secondary' />
+              <ButtonLink href="https://github.com/jerryh-jr" text="On Github!" variant='secondary' />
+          </div>
+      </div>
+  </Section>
+</Layout>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        height: 60vh;
+    }
+
+    .avatar {
+        max-width: 250px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px var(--dark);
+        margin: 10px;
+    }
+
+    .link_container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+    a {
+        padding: 30px 15px;
+        border: solid 1px var(--primary);
+    }
+</style>

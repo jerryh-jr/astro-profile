@@ -1,0 +1,56 @@
+---
+import Section from './Section.astro'
+
+const connectLinks = {
+  email: "mailto:jerry@jerry-codes.com",
+  github: "https://github.com/jerryh-jr",
+  x: "#",
+  linkedin: "https://www.linkedin.com/in/jerry-hudgins-jr/",
+}
+---
+<Section dark={true}>
+  <footer>
+    <div class="icons-container">
+      <a href={connectLinks.email}><img src="/images/icons/email.svg" alt="Email icon"/></a>
+      <a href={connectLinks.github}><img src="/images/icons/github.svg" alt="Github icon"/></a>
+      <!-- No X account at this time
+      <a href={connectLinks.x}><img src="/images/icons/x.svg" alt="X icon"/></a> -->
+      <a href={connectLinks.linkedin}><img src="/images/icons/linkedin.svg" alt="LinkedIn icon"/></a>
+        
+    </div>
+    <p class="rights-text">Copyright © 2025 Jerry All rights reserved</p>
+    <p class="credit-text">Images: Flaticon.com</p>
+  </footer>
+</Section>
+
+<style>
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .icons-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .credit-text{
+            color: var(--light);
+            margin-top: 8px;
+            font-size: 14px
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .icons-container {
+                gap: 4px;
+                img {
+                    height: 20px;;
+                }
+            }
+            
+        }
+    }
+</style>
