@@ -2,6 +2,7 @@
 import Section from "./Section.astro";
 import SectionHeader from "./SectionHeader.astro"
 import { getCollection } from "astro:content";
+import ButtonLink from "./ButtonLink.astro";
 
 const projects = await getCollection('project');
 
@@ -19,7 +20,7 @@ let postArr = [];
             <div class="card">
               <img src={project.data.image} alt={project.data.title}/>
               <div class="small-container">
-                <h3><a href={project.data.liveSiteURL}>{project.data.title}</a></h3>
+                <h3 class="blog_title">{project.data.title}</h3>
                 <div class="separator"></div>
                 <p>{project.data.description}</p>
               </div>
@@ -64,10 +65,16 @@ let postArr = [];
       margin: 15px 0;
     }
 
-    img {
-      height: 232px;
-      width: 232px;
+    .blog_title {
+      font-weight:  600;
+      font-size: 24px;
     }
+
+    img {
+      height: 180px;
+      width: 180px;
+    }
+
     h3 {
       margin-top: 20px;;
     }
